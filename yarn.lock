@@ -41,10 +41,10 @@
     tiny-invariant "^1.2.0"
     tslib "^2.3.1"
 
-"@cardinal/token-manager@npm:@nazaire/cardinal-token-manager@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.npmjs.org/@nazaire/cardinal-token-manager/-/cardinal-token-manager-1.6.1.tgz#4fb2d9fea11270968e5cf70362e800d1e838b508"
-  integrity sha512-uDJfzu+KriwpoP02e+uCYCTiFd6MiERGNhiPI31DXeKZeF+Mr4+4keUHGMZTDukJSk95ml7r2pWrUH8MnnnleA==
+"@cardinal/token-manager@npm:@nazaire/cardinal-token-manager@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@nazaire/cardinal-token-manager/-/cardinal-token-manager-1.6.2.tgz#bc40336ceb99137c28810c6439803520b7cdfcba"
+  integrity sha512-aW9ZKTwrkx3IcMjmOj+ryyHPV3HrAfKTyeGiwmfR/VKdJi344aoEtWXM2nGNcVo0jDFrp7ulTAD0IEqqvCo4Mw==
   dependencies:
     "@cardinal/common" "^2.0.12"
     "@metaplex-foundation/mpl-token-metadata" "^1.2.5"
@@ -121,6 +121,30 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@metaplex-foundation/beet-solana@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@metaplex-foundation/beet-solana/-/beet-solana-0.4.0.tgz#52891e78674aaa54e0031f1bca5bfbc40de12e8d"
+  integrity sha512-B1L94N3ZGMo53b0uOSoznbuM5GBNJ8LwSeznxBxJ+OThvfHQ4B5oMUqb+0zdLRfkKGS7Q6tpHK9P+QK0j3w2cQ==
+  dependencies:
+    "@metaplex-foundation/beet" ">=0.1.0"
+    "@solana/web3.js" "^1.56.2"
+    bs58 "^5.0.0"
+    debug "^4.3.4"
+
+"@metaplex-foundation/beet@>=0.1.0", "@metaplex-foundation/beet@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@metaplex-foundation/beet/-/beet-0.7.1.tgz#0975314211643f87b5f6f3e584fa31abcf4c612c"
+  integrity sha512-hNCEnS2WyCiYyko82rwuISsBY3KYpe828ubsd2ckeqZr7tl0WVLivGkoyA/qdiaaHEBGdGl71OpfWa2rqL3DiA==
+  dependencies:
+    ansicolors "^0.3.2"
+    bn.js "^5.2.0"
+    debug "^4.3.3"
+
+"@metaplex-foundation/cusper@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@metaplex-foundation/cusper/-/cusper-0.0.2.tgz#dc2032a452d6c269e25f016aa4dd63600e2af975"
+  integrity sha512-S9RulC2fFCFOQraz61bij+5YCHhSO9llJegK8c8Y6731fSi6snUSQJdCUqYS8AIgR0TKbQvdvgSyIIdbDFZbBA==
+
 "@metaplex-foundation/mpl-core@^0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@metaplex-foundation/mpl-core/-/mpl-core-0.0.2.tgz#17ee2cc216e17629d6df1dbba75964625ebbd603"
@@ -137,6 +161,19 @@
     "@metaplex-foundation/mpl-core" "^0.0.2"
     "@solana/spl-token" "^0.1.8"
     "@solana/web3.js" "^1.31.0"
+
+"@metaplex-foundation/mpl-token-metadata@^2.5.2":
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@metaplex-foundation/mpl-token-metadata/-/mpl-token-metadata-2.5.2.tgz#ec84464e2bf65bf491abdc71c3882e5973dd9978"
+  integrity sha512-lAjQjj2gGtyLq8MOkp4tWZSC5DK9NWgPd3EoH0KQ9gMs3sKIJRik0CBaZg+JA0uLwzkiErY2Izus4vbWtRADJQ==
+  dependencies:
+    "@metaplex-foundation/beet" "^0.7.1"
+    "@metaplex-foundation/beet-solana" "^0.4.0"
+    "@metaplex-foundation/cusper" "^0.0.2"
+    "@solana/spl-token" "^0.3.6"
+    "@solana/web3.js" "^1.66.2"
+    bn.js "^5.2.0"
+    debug "^4.3.4"
 
 "@noble/ed25519@^1.7.0":
   version "1.7.0"
@@ -338,32 +375,19 @@
     buffer-layout "^1.2.0"
     dotenv "10.0.0"
 
-"@solana/web3.js@^1.21.0", "@solana/web3.js@^1.31.0", "@solana/web3.js@^1.34.0", "@solana/web3.js@^1.36.0":
-  version "1.56.2"
-  resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.56.2.tgz#5212e8b147ebc216ea5a7aa99d5b555ebe41f9bd"
-  integrity sha512-ByWfNA8H/1EB4g0749uhkQ0zZZAQealzRmmT3UMIv3xe0DeHwnrzQUavBtAlHNMrKqLHu8kd+XtPci6zreMjjA==
+"@solana/spl-token@^0.3.6":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@solana/spl-token/-/spl-token-0.3.6.tgz#35473ad2ed71fe91e5754a2ac72901e1b8b26a42"
+  integrity sha512-P9pTXjDIRvVbjr3J0mCnSamYqLnICeds7IoH1/Ro2R9OBuOHdp5pqKZoscfZ3UYrgnCWUc1bc9M2m/YPHjw+1g==
   dependencies:
-    "@babel/runtime" "^7.12.5"
-    "@noble/ed25519" "^1.7.0"
-    "@noble/hashes" "^1.1.2"
-    "@noble/secp256k1" "^1.6.3"
     "@solana/buffer-layout" "^4.0.0"
-    bigint-buffer "^1.1.5"
-    bn.js "^5.0.0"
-    borsh "^0.7.0"
-    bs58 "^4.0.1"
-    buffer "6.0.1"
-    fast-stable-stringify "^1.0.0"
-    jayson "^3.4.4"
-    js-sha3 "^0.8.0"
-    node-fetch "2"
-    rpc-websockets "^7.5.0"
-    superstruct "^0.14.2"
+    "@solana/buffer-layout-utils" "^0.2.0"
+    buffer "^6.0.3"
 
-"@solana/web3.js@^1.32.0":
-  version "1.63.1"
-  resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.63.1.tgz#88a19a17f5f4aada73ad70a94044c1067cab2b4d"
-  integrity sha512-wgEdGVK5FTS2zENxbcGSvKpGZ0jDS6BUdGu8Gn6ns0CzgJkK83u4ip3THSnBPEQ5i/jrqukg998BwV1H67+qiQ==
+"@solana/web3.js@^1.21.0", "@solana/web3.js@^1.31.0", "@solana/web3.js@^1.32.0", "@solana/web3.js@^1.34.0", "@solana/web3.js@^1.36.0", "@solana/web3.js@^1.56.2", "@solana/web3.js@^1.66.2":
+  version "1.67.0"
+  resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.67.0.tgz#bd67742cd9c176889fd1954080173dd7d0c224a2"
+  integrity sha512-t6tfRbYyuoyuik4D4B8eK6hPm//+5l7k+00YppFTGoxcix8b2bpE7iANLmvw+u5iZNMwG3VFV20xRdrqz8zhvQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@noble/ed25519" "^1.7.0"
@@ -684,6 +708,11 @@ ansi-styles@^6.0.0:
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-6.1.0.tgz#87313c102b8118abd57371afab34618bf7350ed3"
   integrity sha512-VbqNsoz55SYGczauuup0MFUyXNQviSpFTj1RQtFzmQLk18qbVSpTFFGMT293rmDaQuKCT6InmbuEyUne4mTuxQ==
 
+ansicolors@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/ansicolors/-/ansicolors-0.3.2.tgz#665597de86a9ffe3aa9bfbe6cae5c6ea426b4979"
+  integrity sha512-QXu7BPrP29VllRxH8GwB7x5iX5qWKAAMLqKQGWTeLWVlNHNOpVMJ91dsxQAIWXpjuW5wqvxu3Jd/nRjrJ+0pqg==
+
 anymatch@~3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.2.tgz#c0557c096af32f106198f4f4e2a383537e378716"
@@ -754,6 +783,11 @@ base-x@^3.0.2, base-x@^3.0.6:
   integrity sha512-H7JU6iBHTal1gp56aKoaa//YUxEaAOUiydvrV/pILqIHXTtqxSkATOnDA2u+jZ/61sD+L/412+7kzXRtWukhpQ==
   dependencies:
     safe-buffer "^5.0.1"
+
+base-x@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/base-x/-/base-x-4.0.0.tgz#d0e3b7753450c73f8ad2389b5c018a4af7b2224a"
+  integrity sha512-FuwxlW4H5kh37X/oW59pwTzzTKRzfrrQwhmyspRM7swOEZcHtDZSCt45U6oKgtuFE+WYPblePMVIPR4RZrh/hw==
 
 base64-js@^1.3.1, base64-js@^1.5.1:
   version "1.5.1"
@@ -837,6 +871,13 @@ bs58@^4.0.0, bs58@^4.0.1:
   dependencies:
     base-x "^3.0.2"
 
+bs58@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/bs58/-/bs58-5.0.0.tgz#865575b4d13c09ea2a84622df6c8cbeb54ffc279"
+  integrity sha512-r+ihvQJvahgYT50JD05dyJNKlmmSlMoOGwn1lCcEzanPglg7TxYjioQUYehQ9mAR/+hOSd2jRc/Z2y5UxBymvQ==
+  dependencies:
+    base-x "^4.0.0"
+
 buffer-layout@^1.2.0, buffer-layout@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/buffer-layout/-/buffer-layout-1.2.2.tgz#b9814e7c7235783085f9ca4966a0cfff112259d5"
@@ -850,7 +891,7 @@ buffer@6.0.1:
     base64-js "^1.3.1"
     ieee754 "^1.2.1"
 
-buffer@6.0.3, buffer@~6.0.3:
+buffer@6.0.3, buffer@^6.0.3, buffer@~6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/buffer/-/buffer-6.0.3.tgz#2ace578459cc8fbe2a70aaa8f52ee63b6a74c6c6"
   integrity sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==
@@ -1078,7 +1119,7 @@ debug@^3.2.7:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.1, debug@^4.3.2, debug@^4.3.4:
+debug@^4.1.1, debug@^4.3.2, debug@^4.3.3, debug@^4.3.4:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -1972,11 +2013,6 @@ js-sha256@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/js-sha256/-/js-sha256-0.9.0.tgz#0b89ac166583e91ef9123644bd3c5334ce9d0966"
   integrity sha512-sga3MHh9sgQN2+pJ9VYZ+1LPwXOxuBJBA5nrR5/ofPfuiJBE2hnjsaN8se8JznOmGLN2p49Pe5U/ttafcs/apA==
-
-js-sha3@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/js-sha3/-/js-sha3-0.8.0.tgz#b9b7a5da73afad7dedd0f8c463954cbde6818840"
-  integrity sha512-gF1cRrHhIzNfToc802P800N8PpXS+evLLXfsVpowqmAFR9uwbi89WvXg2QspOmXL8QL86J4T1EpFu+yUkwJY3Q==
 
 js-yaml@4.1.0, js-yaml@^4.1.0:
   version "4.1.0"

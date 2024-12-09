@@ -47,7 +47,7 @@
   "dependencies": {
     "@cardinal/common": "^2.0.11",
     "@cardinal/token-manager": "npm:@nazaire/cardinal-token-manager@^1.6.2",
-    "@metaplex-foundation/mpl-token-metadata": "^1.2.5",
+    "@metaplex-foundation/mpl-token-metadata": "^2.5.2",
     "node-fetch": "2"
   },
   "devDependencies": {
